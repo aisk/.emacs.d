@@ -51,9 +51,9 @@
 (tool-bar-mode -1)
 (tooltip-mode -1)
 (menu-bar-mode -1)
-(if (eq window-system 'ns)
-  (menu-bar-mode 1))
-(add-to-list 'default-frame-alist '(font . "Sarasa Mono SC 16"))
+(if (not (eq window-system nil))
+  (scroll-bar-mode -1))
+(add-to-list 'default-frame-alist '(font . "Sarasa Mono SC 11"))
 (add-to-list 'default-frame-alist '(height . 36))
 (add-to-list 'default-frame-alist '(width . 120))
 
